@@ -1,0 +1,164 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/* ============================================================
+   Common Basic Styles
+   ============================================================ */
+
+body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.browser {
+  border: 6px solid #818285;
+  /* border-top: 20px solid #818285; */
+  border-radius: 12px;
+  width: 500px;
+  height: 400px;
+  margin-top: 8px;
+}
+
+.btn_box {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  gap: 8px;
+  height: 24px;
+  background-color: #818285;
+
+  & .btn {
+    border: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+  }
+
+  & .btn:first-child {
+    background-color: #ed1c24;
+  }
+  & .btn:nth-child(2) {
+    background-color: #fff103;
+  }
+  & .btn:last-child {
+    background-color: #39b54a;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================================================
+   First FlexBox Styles
+   ============================================================ */
+
+.group1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper1 {
+  display: flex;
+  gap: 8px;
+}
+
+/* ============================================================
+   Second FlexBox Styles
+   ============================================================ */
+
+.group2 {
+  display: flex;
+  justify-content: space-between;
+  height: 94%;
+}
+
+.second_box2 {
+  align-self: center;
+}
+
+.third_box2 {
+  align-self: flex-end;
+}
+
+/* ============================================================
+   Third FlexBox Styles
+   ============================================================ */
+
+.group3 {
+  display: flex;
+  justify-content: center;
+}
+
+.first_box3 {
+  width: 200px;
+  height: 200px;
+  background-color: #3a3a3c;
+  position: relative;
+
+  & p {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* ============================================================
+   Fourth FlexBox Styles
+   ============================================================ */
+
+.first_box4 {
+  background-color: #3a3a3c;
+  position: relative;
+  justify-content: start;
+  align-items: start;
+}
+
+.second_box4 {
+  position: absolute;
+  justify-content: start;
+  align-items: start;
+  top: 50%;
+  left: 50%;
+}
+
+/* ============================================================
+   Fifth FlexBox Styles
+   ============================================================ */
+
+.group5 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 94%;
+}
+
+.first_box5 {
+  width: 340px;
+  height: 160px;
+  background-color: #3a3a3c;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+
+  & p {
+    position: absolute;
+  }
+}
+
+.second_box5 {
+  align-self: flex-end;
+}
